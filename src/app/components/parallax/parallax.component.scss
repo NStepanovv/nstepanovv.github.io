@@ -1,0 +1,24 @@
+.parallax {
+  /* The image used */
+  background-image: url(/assets/city3.png);
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade.show {
+  transition: opacity 1.2s ease-out;
+  opacity: 1;
+}
+

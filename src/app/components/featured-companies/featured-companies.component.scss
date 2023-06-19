@@ -1,0 +1,34 @@
+.featured-companies-container {
+  flex: 1;
+  max-width: 2000px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .featured-companies {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+    .featured-companies {
+      flex-direction: column; /* new value */
+      gap: 25px;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    color: rgb(168, 176, 187);
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
